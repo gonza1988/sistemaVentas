@@ -9,6 +9,7 @@ package com.gomensoro.ventasgomensoro.acceso;
 public class VentasGomensoro {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Acceso.cargarArchivo("cliente.txt");
     }
 }

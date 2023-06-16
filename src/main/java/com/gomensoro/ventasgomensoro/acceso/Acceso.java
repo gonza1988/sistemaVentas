@@ -22,14 +22,14 @@ public class Acceso {
         BufferedReader bu;
         String linea;
         File carpeta = new File("Archivos");
-        File archivo = new File("Archivos" + ruta);
+        File archivo = new File("Archivos/" + ruta);
                 
         try{
             if(!carpeta.exists()){
-                FileUtils.forceMkdir(carpeta); //en caso de no existir crea esa carpeta
+                FileUtils.forceMkdir(carpeta); //en caso de no existir, crea esa carpeta
             }
             if(!archivo.exists()){
-                archivo.createNewFile();
+                archivo.createNewFile(); //en caso de no existir, crea el archivo
             }
             
             lista = new ArrayList<>(); //Instancio la lista
